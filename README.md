@@ -52,18 +52,7 @@ curl -X POST \
 
 **Get cotact by address**
 ```sh
-curl -X POST \
-  http://localhost:8080/contactbyAddress/address1 \
-  -H 'accept: application/json' \
-  -H 'cache-control: no-cache' \
-  -H 'content-type: application/json' \
-  -H 'postman-token: 97b159fd-af6f-49fa-94c0-74143584b99b' \
-  -d '{"firstName" : "firstName10",
-		"lastName" : "lastName10",
-		"address" : "address",
-		"homeTel" : "111111",
-		"mobileTel" : "2222222",
-		"workTel" : "3333333"}'
+curl -X GET http://localhost:8080/contactbyAddress/address
 ```
 
 
