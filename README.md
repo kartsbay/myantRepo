@@ -3,15 +3,15 @@
 
 The API has the following entities (stored in MongoDB, create some sample entries):
 
-  - Contact
- First Name 
- Last Name
- Address
- Home Tel
- Mobile Tel
- Work Tel
+  - Contact\
+ First Name \
+ Last Name\
+ Address\
+ Home Tel\
+ Mobile Tel\
+ Work Tel\
 
-- Groups
+- Groups\
  Any given contact can be added to a group
 
 ### Sample End points
