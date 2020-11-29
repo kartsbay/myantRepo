@@ -9,7 +9,7 @@ The API has the following entities (stored in MongoDB, create some sample entrie
  Address\
  Home Tel\
  Mobile Tel\
- Work Tel\
+ Work Tel
 
 - Groups\
  Any given contact can be added to a group
