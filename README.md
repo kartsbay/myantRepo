@@ -50,7 +50,7 @@ curl -X POST \
 ```
 
 
-**Get cotact by address**
+**Get contact by address**
 ```sh
 curl -X GET http://localhost:8080/contactbyAddress/address
 ```
