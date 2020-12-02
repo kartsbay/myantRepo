@@ -2,6 +2,7 @@ package com.myant.controller;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -110,6 +111,9 @@ public class ContactController {
 	@PostMapping("/contacts")
 	public ResponseEntity<Contact> createContact(@RequestBody Contact contact) {
 		try {
+			if(Objects.isNull(contact.getFirstName()) || Objects.isNull(contact.getLastName()) || Objects.isNull(contact.getAddress())) {
+				return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+			}
 			Contact _contact = contactRepository.save(new Contact(contact.getFirstName(), contact.getLastName(),
 					contact.getAddress(), contact.getHomeTel(), contact.getMobileTel(), contact.getWorkTel()));
 			return new ResponseEntity<>(_contact, HttpStatus.CREATED);
