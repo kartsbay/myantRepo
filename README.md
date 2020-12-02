@@ -1,5 +1,8 @@
 # MYANT assignment
 
+**To run the project, clone the repo and run below command**
+mvn clean install
+*We need to have a mongo db database "ContactStore", having two documents "Contact" and "Group" running on localhost*
 
 The API has the following entities (stored in MongoDB, create some sample entries):
 
